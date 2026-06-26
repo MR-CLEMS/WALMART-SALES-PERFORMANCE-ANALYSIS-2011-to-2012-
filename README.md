@@ -1,38 +1,24 @@
-# Walmart Sales Performance Analysis
-
+# WALMART SALES PERFORMANCE ANALYSIS
 ---
 
-## Project Overview
+## INTRODUCTION
 
 This project analyses Walmart's weekly sales performance data to uncover business insights across store rankings, seasonal trends, holiday impacts, external economic factors, and revenue distribution. The analysis follows a full data analytics pipeline from raw data ingestion through to executive reporting.
-
 | Metric | Value |
 |---|---|
-| 💰 Total Revenue | $6.74 Billion |
-| 🏪 Total Stores | 45 |
-| 📅 Weeks Tracked | 143 |
-| 📊 Total Records | 6,435 rows |
-| 📆 Period | February 2010 – October 2012 |
-| 📈 Avg Weekly Sales | $1,046,965 per store |
-| 🔝 Highest Single Week | $3,818,686 (Store 14, Christmas Eve 2010) |
-| 📉 Lowest Single Week | $209,986 (Store 33, Dec 2010) |
+|  Total Revenue | $6.74 Billion |
+|  Total Stores | 45 |
+|  Weeks Tracked | 143 |
+|  Total Records | 6,435 rows |
+|  Period | February 2010 – October 2012 |
+|  Avg Weekly Sales | $1,046,965 per store |
+|  Highest Single Week | $3,818,686 (Store 14, Christmas Eve 2010) |
+| Lowest Single Week | $209,986 (Store 33, Dec 2010) |
 
 ---
-
-## 🧰 METHODOLOGY
-
-| **Microsoft Excel** | Data cleaning, formatting, derived columns, pivot exploration |
-| **SQL Server (SSMS)** | Structured analytical querying — aggregations, window functions, Pareto analysis |
-| **Microsoft Power BI** | 9-page interactive dashboard with DAX measures and conditional formatting |
-| **Microsoft PowerPoint** | 9-slide executive presentation with Walmart branding |
-| **Microsoft Word** | Formal analytical report with 8 structured sections |
-
----
-
-## 📊 DESCRIPTION
+## DESCRIPTION
 
 **Source:** [Kaggle — Walmart Dataset by Yasser H](https://www.kaggle.com/datasets/yasserh/walmart-dataset)
-
 | Column | Type | Description |
 |---|---|---|
 | `Row_ID` | Integer | Unique row identifier |
@@ -54,12 +40,15 @@ This project analyses Walmart's weekly sales performance data to uncover busines
 
 ---
 
-## 🗄️ ANALYSIS 
+## METHODOLOGY
+| **Microsoft Excel** | Data cleaning, formatting, derived columns, pivot exploration |
+| **SQL Server (SSMS)** | Structured analytical querying — aggregations, window functions, Pareto analysis |
+| **Microsoft Power BI** | 9-page interactive dashboard with DAX measures and conditional formatting |
+| **Microsoft PowerPoint** | 9-slide executive presentation with Walmart branding |
 
-All queries are in [`Walmart_SQLQuery1.sql`](sql/Walmart_SQLQuery1.sql). The analysis is structured across **6 categories** covering **40+ questions**:
+---
 
-| # | Category | Key Questions |
-|---|---|---|
+## ANALYSIS AND FINDINGS 
 | 1 | **Overall Business Performance** | Total revenue, avg weekly sales, highest/lowest weeks |
 | 2 | **Store Performance & Ranking** | Top/bottom 10 stores, YoY growth, most consistent stores |
 | 3 | **Time & Seasonal Trends** | Monthly/quarterly/yearly breakdowns, YoY growth rate |
@@ -67,28 +56,6 @@ All queries are in [`Walmart_SQLQuery1.sql`](sql/Walmart_SQLQuery1.sql). The ana
 | 5 | **External Factors** | Temperature, fuel price, CPI and unemployment bucket analysis |
 | 6 | **Advanced Analysis** | Q1 vs Q4 comparison, best quarter per year, quarterly growth 
 
----
-
-## Dashboard Screenshots
-
-### Overview Dashboard
-![Walmart Overview Dashboard](page1.jpg)
-
-### Store Performance & Trends
-![Store Performance](page2.jpg)
-
-### Holiday Impact Analysis
-![Holiday Impact](page3.jpg)
-
-### External Factors & Sales Impact
-![External Factors](page4.jpg)
-
-### Advanced Analytics
-![Advanced Analysis](page5.jpg)
-
----
-
-## 🔍 ANALYSIS AND FINDINGS
 - **Store 20** leads all-time total revenue at **$301.4M**
 - **Store 14** recorded the highest single week at **$3,818,686** (Christmas Eve 2010)
 - **8x revenue gap** between the top and bottom performing stores
@@ -115,6 +82,25 @@ All queries are in [`Walmart_SQLQuery1.sql`](sql/Walmart_SQLQuery1.sql). The ana
 - Top 10 stores contribute **39.05%** of revenue ($2.63B)
 - Bottom 10 stores contribute only **8.60%** ($580M)
 - **Top 10 generate 4.5x more revenue** than the bottom 10
+
+---
+
+## Dashboard Screenshots
+
+### Overview Dashboard
+![Walmart Overview Dashboard](page1.jpg)
+
+### Store Performance & Trends
+![Store Performance](page2.jpg)
+
+### Holiday Impact Analysis
+![Holiday Impact](page3.jpg)
+
+### External Factors & Sales Impact
+![External Factors](page4.jpg)
+
+### Advanced Analytics
+![Advanced Analysis](page5.jpg)
 
 ---
 
