@@ -19,39 +19,11 @@ This project analyses Walmart's weekly sales performance data to uncover busines
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-walmart-sales-analysis/
-│
-├── 📁 data/
-│   └── Walmart_Dataset.csv               # Cleaned dataset (6,435 rows × 16 columns)
-│
-├── 📁 sql/
-│   └── Walmart_SQLQuery1.sql             # 60+ analytical SQL queries across 10 categories
-│
-├── 📁 dashboards/
-│   ├── WALMART_OVERVIEW.jpg              # Power BI — Business Overview page
-│   ├── WALMART_TRENDS.jpg                # Power BI — Store Performance & Trends page
-│   ├── WALMART_SEASONS__IMPACT_ANALYSIS.jpg  # Power BI — Holiday Impact Analysis page
-│   ├── WALMART_EXTERNAL_FACTORS_AND_SALES_IMPACT.jpg  # Power BI — External Factors page
-│   └── WALMART_ADVANCE_ANALYSIS_.jpg    # Power BI — Advanced Analytics page
-│
-├── 📁 presentation/
-│   └── Walmart_Sales_Analysis.pptx      # Executive PowerPoint (9 slides)
-│
-├── 📁 report/
-│   └── Walmart_Sales_Analysis_Report.docx  # Formal Word report (8 sections)
-│
-└── README.md
-```
 
 ---
 
-## 🧰 Tools & Technologies
+## 🧰 METHODOLOGU
 
-| Tool | Purpose |
-|---|---|
 | **Microsoft Excel** | Data cleaning, formatting, derived columns, pivot exploration |
 | **SQL Server (SSMS)** | Structured analytical querying — aggregations, window functions, Pareto analysis |
 | **Microsoft Power BI** | 9-page interactive dashboard with DAX measures and conditional formatting |
@@ -60,7 +32,7 @@ walmart-sales-analysis/
 
 ---
 
-## 📊 Dataset Description
+## 📊 DESCRIPTION
 
 **Source:** [Kaggle — Walmart Dataset by Yasser H](https://www.kaggle.com/datasets/yasserh/walmart-dataset)
 
@@ -85,7 +57,7 @@ walmart-sales-analysis/
 
 ---
 
-## 🗄️ SQL Analysis — 10 Categories
+## 🗄️ SQL Analysis — 
 
 All queries are in [`Walmart_SQLQuery1.sql`](sql/Walmart_SQLQuery1.sql). The analysis is structured across **10 categories** covering **60+ questions**:
 
