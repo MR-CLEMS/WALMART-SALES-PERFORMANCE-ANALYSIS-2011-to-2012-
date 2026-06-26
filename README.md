@@ -122,13 +122,19 @@ This project analyses Walmart's weekly sales performance data to uncover busines
 
 ---
 
-## 📋 RECOMMENDATIONS
+## RECOMMENDATIONS
 | 1 | **Prioritise Thanksgiving** over Christmas in holiday planning — maximise Black Friday readiness | High |
+---
 | 2 | **Develop a Summer Sales Strategy** — dedicated Q3 promotions for July/August peak | High |
+---
 | 3 | **Monitor Unemployment** — implement regional pricing and inventory adjustments | High |
+---
 | 4 | **Review Bronze Tier Stores** — performance improvement programme for bottom 11 stores |  Medium |
+---
 | 5 | **Replicate Store 38's Turnaround** (+20.21% YoY) as a playbook for underperformers | Medium |
+---
 | 6 | **Protect Elite Stores** (1, 2, 4, 6, 10, 13, 14, 20, 27) — flagship investment priority | Ongoing |
+---
 
 ---
 
