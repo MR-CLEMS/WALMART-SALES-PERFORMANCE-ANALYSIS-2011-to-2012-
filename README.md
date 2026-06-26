@@ -1,10 +1,8 @@
-# 🛒 Walmart Sales Performance Analysis
-
-> A comprehensive end-to-end data analysis project covering **45 Walmart stores** across **143 weeks (2010–2012)**, built using **Excel → SQL Server → Power BI → PowerPoint → Word**.
+# Walmart Sales Performance Analysis
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyses Walmart's weekly sales performance data to uncover business insights across store rankings, seasonal trends, holiday impacts, external economic factors, and revenue distribution. The analysis follows a full data analytics pipeline from raw data ingestion through to executive reporting.
 
@@ -104,25 +102,6 @@ All queries are in [`Walmart_SQLQuery1.sql`](sql/Walmart_SQLQuery1.sql). The ana
 | 9 | **Advanced Analytics** | Thanksgiving vs Christmas, Super Bowl impact, consistency CV% |
 | 10 | **Pareto & Revenue Share** | Revenue contribution %, cumulative Pareto curve, elite stores |
 
-### 🔧 SQL Techniques Used
-
-```sql
--- Window Functions
-DENSE_RANK() OVER (PARTITION BY Year ORDER BY SUM(Weekly_Sales) DESC)
-FIRST_VALUE() OVER (PARTITION BY Store ORDER BY Date ASC)
-LAG(SUM(Weekly_Sales)) OVER (ORDER BY Year)
-AVG(Weekly_Sales) OVER (PARTITION BY Store ORDER BY Date ROWS BETWEEN 3 PRECEDING AND CURRENT ROW)
-
--- Conditional Bucketing
-CASE WHEN Temperature BETWEEN 0 AND 32 THEN 'Cold (0-32F)' ...
-
--- Aggregations & Subqueries
-HAVING AVG(Weekly_Sales) > (SELECT AVG(Weekly_Sales) FROM Walmart_datasett)
-
--- Pareto Cumulative Analysis
-SUM(Contribution_Pct) OVER (ORDER BY Total_Sales DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-```
-
 ---
 
 ## 📈 Power BI Dashboard — 9 Pages
@@ -141,48 +120,24 @@ The Power BI report contains **9 interactive dashboard pages** with **DAX measur
 | 8 | Advanced Analytics | Thanksgiving vs Christmas bar, Super Bowl ranking, CV% chart |
 | 9 | Pareto & Revenue Share | Pareto combo chart, Top 10 vs Bottom 10, revenue share donuts |
 
-### 🔢 Key DAX Measures
-
-```dax
--- Holiday Uplift %
-Holiday_Uplift_Pct =
-VAR HolidayAvg = CALCULATE(AVERAGE('Walmart Dataset'[Weekly_Sales]), 'Walmart Dataset'[Holiday_Flag] = 1)
-VAR NonHolidayAvg = CALCULATE(AVERAGE('Walmart Dataset'[Weekly_Sales]), 'Walmart Dataset'[Holiday_Flag] = 0)
-RETURN ROUND(((HolidayAvg - NonHolidayAvg) / NonHolidayAvg) * 100, 2)
-
--- Performance Tier
-Performance_Tier =
-VAR StoreAvg = AVERAGE('Walmart Dataset'[Weekly_Sales])
-RETURN
-IF(StoreAvg >= 1395901, "🥇 Platinum",
-IF(StoreAvg >= 1046965, "🥈 Gold",
-IF(StoreAvg >= 556404,  "🥉 Silver", "Bronze")))
-
--- YoY Growth %
-YoY_Growth_Pct =
-VAR S2010 = [Total_Sales_2010]
-VAR S2011 = [Total_Sales_2011]
-RETURN IF(S2010 = 0 || ISBLANK(S2010), BLANK(), ROUND(((S2011 - S2010) / S2010) * 100, 2))
-```
-
 ---
 
 ## 🖼️ Dashboard Screenshots
 
 ### Overview Dashboard
-![Walmart Overview Dashboard](dashboards/WALMART_OVERVIEW.jpg)
+![Walmart Overview Dashboard](page1.jpg)
 
 ### Store Performance & Trends
-![Store Performance](dashboards/WALMART_TRENDS.jpg)
+![Store Performance](page2.jpg)
 
 ### Holiday Impact Analysis
-![Holiday Impact](dashboards/WALMART_SEASONS__IMPACT_ANALYSIS.jpg)
+![Holiday Impact](page3.jpg)
 
 ### External Factors & Sales Impact
-![External Factors](dashboards/WALMART_EXTERNAL_FACTORS_AND_SALES_IMPACT.jpg)
+![External Factors](page4.jpg)
 
 ### Advanced Analytics
-![Advanced Analysis](dashboards/WALMART_ADVANCE_ANALYSIS_.jpg)
+![Advanced Analysis](page5.jpg)
 
 ---
 
