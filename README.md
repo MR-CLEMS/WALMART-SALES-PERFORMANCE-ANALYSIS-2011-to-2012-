@@ -48,7 +48,7 @@ This project analyses Walmart's weekly sales performance data to uncover busines
 | **Microsoft Power BI** | 9-page interactive dashboard with DAX measures and conditional formatting |
 ---
 | **Microsoft PowerPoint** | 9-slide executive presentation with Walmart branding |
-
+---
 ---
 
 ## ANALYSIS AND FINDINGS 
