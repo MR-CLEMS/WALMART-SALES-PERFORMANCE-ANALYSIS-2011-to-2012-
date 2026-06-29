@@ -120,19 +120,19 @@ This project followed a structured four-stage analytical pipeline:
 ## Dashboard Screenshots
 
 ### Overview Dashboard
-![Walmart Overview Dashboard](page1.jpg)
+![Walmart Overview Dashboard](Page.jpg)
 
 ### Store Performance & Trends
-![Store Performance](page2.jpg)
+![Store Performance](Page2.jpg)
 
 ### Holiday Impact Analysis
-![Holiday Impact](page3.jpg)
+![Holiday Impact](Page3.jpg)
 
 ### External Factors & Sales Impact
-![External Factors](page4.jpg)
+![External Factors](Page4.jpg)
 
 ### Advanced Analytics
-![Advanced Analysis](page5.jpg)
+![Advanced Analysis](Page5.jpg)
 
 ---
 
