@@ -120,7 +120,7 @@ This project followed a structured four-stage analytical pipeline:
 ## Dashboard Screenshots
 
 ### Overview Dashboard
-![Walmart Overview Dashboard](Page.jpg)
+![Walmart Overview Dashboard](Page1.jpg)
 
 ### Store Performance & Trends
 ![Store Performance](Page2.jpg)
